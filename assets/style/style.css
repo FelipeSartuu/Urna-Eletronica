@@ -6,9 +6,9 @@
 }
 
 @keyframes pisca {
-    0% {opacity: 0.2;}
+    0% {opacity: 0.1;}
     50% {opacity: 1;}
-    100% {opacity: 0.2;}
+    100% {opacity: 0.1;}
 }
 
 body {
@@ -59,6 +59,7 @@ body {
     cursor: pointer;
     box-shadow: 3px 3px 0px #666;
     transition: 0.4s;
+    user-select: none;
 }
 
 .teclado-botao:active {
@@ -72,7 +73,7 @@ body {
     font-size: 0.9em;
 }
 
-.botao-nulo {
+.botao-corrige {
     background-color: #f09f46;
     color: #000;
     font-size: 0.9em;
@@ -113,6 +114,7 @@ body {
 
 .d1-3 {
     height: 50px;
+    display: flex;
 
 }
 
@@ -170,4 +172,20 @@ body {
     font-size: 15px;
     border-top: 2px solid #000;
     padding-left: 10px;
+}
+
+
+.aviso-grande {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.aviso-gigante {
+    font-size: 5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    
 }
